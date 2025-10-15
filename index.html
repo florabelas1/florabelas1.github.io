@@ -9,37 +9,52 @@
     <meta property="og:description" content="Research‑minded developer building intelligent systems." />
     <meta property="og:url" content="https://florabelas.com" />
   </head>
-  <body class="min-h-screen bg-slate-50 font-sans antialiased text-slate-800 selection:bg-amber-300/90">
+  <body class="min-h-screen bg-slate-900 font-sans antialiased text-slate-200 selection:bg-emerald-500/70">
     <!-- hero -->
-    <header class="relative isolate overflow-hidden bg-gradient-to-br from-emerald-500/25 to-fuchsia-500/15 py-24">
+    <header class="relative isolate overflow-hidden bg-gradient-to-br from-emerald-600/30 to-fuchsia-600/10 py-24">
       <div class="mx-auto max-w-3xl px-6 text-center">
-        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-          Flora Belas
-        </h1>
-        <p class="mt-4 text-xl font-medium text-slate-700">
-          Software&nbsp;Developer&nbsp;| AI &amp; Systems
-        </p>
-        <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
-          Construindo pontes entre dados, algoritmos e pessoas para criar experiências
-          realmente inteligentes. Página completa em breve.
-        </p>
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">Flora Belas</h1>
+        <p class="mt-4 text-xl font-medium text-emerald-200">Software Developer&nbsp;| AI &amp; Systems</p>
+        <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-300">Construindo pontes entre dados, algoritmos e pessoas para criar experiências inteligentes.</p>
       </div>
     </header>
 
-    <!-- placeholder section -->
-    <section class="mx-auto max-w-4xl px-6 py-24 text-center">
-      <h2 class="text-2xl font-semibold text-slate-900">Portfólio em atualização</h2>
-      <p class="mt-4 text-slate-600">
-        Espaço em construção. Volte em breve para conferir as novidades. 
+    <!-- about me -->
+    <section id="about" class="mx-auto max-w-4xl px-6 py-20">
+      <h2 class="mb-6 text-center text-3xl font-bold text-white">Sobre Mim</h2>
+      <p class="text-lg leading-relaxed text-slate-300">
+        Desenvolvedora full‑stack com visão sistêmica e foco em IA aplicada. Atualmente gerencio uma plataforma de bilhetagem que processa
+        <strong class="text-emerald-200">2&nbsp;milhões de transações diárias</strong>, onde reduzi o tempo médio de resolução de defeitos de&nbsp;4&nbsp;h para&nbsp;45&nbsp;min usando análise de causa‑raiz metódica.<br><br>
+        Minha abordagem combina pragmatismo de engenharia de software (Java&nbsp;/ Spring Boot, Python) com pesquisa independente em edge‑AI e saúde digital. Desenho sistemas que priorizam privacidade, processamento local e impacto social mensurável.<br><br>
+        Projetos atuais incluem fenotipagem digital preservando privacidade, revitalização de língua afro‑brasileira via NLP (parceria UFBA) e gestão preditiva de baterias de veículos elétricos.
       </p>
     </section>
 
+    <!-- projects dark with hover -->
+    <section id="projects" class="mx-auto max-w-5xl px-6 py-12">
+      <h2 class="mb-8 text-center text-3xl font-bold text-white">Projetos de Pesquisa & Inovação</h2>
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-2xl bg-slate-800 p-6 shadow-sm ring-1 ring-slate-700/60 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl hover:ring-emerald-400/70">
+          <h3 class="text-base font-semibold text-emerald-200">On‑premise Edge‑AI Health Monitoring</h3>
+          <p class="mt-2 text-sm text-slate-300 line-clamp-6">Sistema de fenotipagem digital que combina realidade virtual, sensores biométricos e edge‑AI para monitorar saúde mental e física em tempo real. Processa dados localmente, garantindo privacidade absoluta. Apoia detecção precoce de crises e intervenções terapêuticas personalizadas.</p>
+        </article>
+        <article class="rounded-2xl bg-slate-800 p-6 shadow-sm ring-1 ring-slate-700/60 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl hover:ring-emerald-400/70">
+          <h3 class="text-base font-semibold text-emerald-200">App de Revitalização Afro‑Brasileira</h3>
+          <p class="mt-2 text-sm text-slate-300 line-clamp-6">Aplicativo mobile em parceria com o Instituto de Letras da UFBA. Processa dicionários em PDF com NLP para extrair vocábulos e oferece busca semântica inteligente, democratizando o acesso a línguas afro‑brasileiras em risco de extinção.</p>
+        </article>
+        <article class="rounded-2xl bg-slate-800 p-6 shadow-sm ring-1 ring-slate-700/60 transition-transform duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl hover:ring-emerald-400/70">
+          <h3 class="text-base font-semibold text-emerald-200">BattCycle Guardian</h3>
+          <p class="mt-2 text-sm text-slate-300 line-clamp-6">Plataforma edge‑AI que monitora preditivamente baterias de lítio em veículos elétricos. Analisa padrões de degradação, otimiza carga e prevê falhas, aumentando a vida útil em até 30 % e mitigando riscos de segurança, tudo com processamento local.</p>
+        </article>
+      </div>
+    </section>
+
     <!-- contact -->
-    <footer class="border-t border-slate-200/70 bg-white/60 py-12 backdrop-blur">
-      <div class="mx-auto max-w-xl px-6 text-center text-sm text-slate-600">
-        <p class="font-medium text-slate-800">Contato</p>
-        <p class="mt-2"><a href="mailto:flora@florabelas.com" class="font-semibold text-emerald-600 hover:text-emerald-700">florabelas@gmail.com</a></p>
-        <p class="mt-8 text-xs text-slate-400">© 2025 Flora Belas. Todos os direitos reservados.</p>
+    <footer class="border-t border-slate-700/70 bg-slate-800/60 py-12 backdrop-blur">
+      <div class="mx-auto max-w-xl px-6 text-center text-sm text-slate-400">
+        <p class="font-medium text-slate-200">Contato</p>
+        <p class="mt-2"><a href="mailto:flora@florabelas.com" class="font-semibold text-emerald-300 hover:text-emerald-200">flora@florabelas.com</a></p>
+        <p class="mt-8 text-xs text-slate-500">© 2025 Flora Belas. Todos os direitos reservados.</p>
       </div>
     </footer>
   </body>
