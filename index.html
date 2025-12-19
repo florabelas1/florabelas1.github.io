@@ -1,116 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Flora Belas — Java Full Stack Engineer</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Belas | Systems Engineer & AI Researcher</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta property="og:title" content="Flora Belas — Java Full Stack Engineer" />
-    <meta property="og:description" content="Building robust, high-performance Java systems for critical operations." />
-    <meta property="og:url" content="https://florabelas.com" />
-  </head>
-  <body class="min-h-screen bg-[#0d1117] font-sans antialiased text-slate-200 selection:bg-cyan-500/60">
-    <!-- hero -->
-    <header class="relative isolate overflow-hidden bg-gradient-to-br from-cyan-600/30 to-indigo-700/15 py-24">
-      <div class="mx-auto max-w-3xl px-6 text-center">
-        <h1 class="text-4xl font-extrabold tracking-tight text-white drop-shadow sm:text-5xl">Flora Belas</h1>
-        <p class="mt-4 text-xl font-medium text-cyan-300">Java Full Stack Engineer</p>
-        <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-300">Construindo sistemas robustos e escaláveis. Transformando arquiteturas legadas em soluções modernas.</p>
-        <p class="mt-6 text-sm"><a href="#english-version" class="text-cyan-300 underline hover:text-white">Read in English ↓</a></p>
-      </div>
-    </header>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- about me (PT) -->
-    <section id="about" class="mx-auto max-w-4xl px-6 py-20">
-      <h2 class="mb-6 text-center text-3xl font-bold text-white">Sobre Mim</h2>
-      <p class="text-lg leading-relaxed text-slate-300">
-        Engenheira de Software especializada no ecossistema <strong>Java</strong>. Atualmente sou responsável pela sustentação e evolução de um ecossistema de <strong>15 sistemas críticos</strong> de bilhetagem que processam <strong class="text-cyan-300">2 milhões de transações diárias</strong>.<br><br>
-        Minha rotina profissional foca na estabilidade de sistemas legados (J2EE/JSF), com ênfase em resolução de incidentes complexos e análise de dados Oracle. Paralelamente, <strong>dedico meus projetos pessoais à modernização técnica</strong>, aplicando minha base de engenharia para construir arquiteturas novas com <strong>Spring Boot</strong> e microsserviços.<br><br>
-        Meu objetivo é unir a disciplina da sustentação crítica com a agilidade do desenvolvimento moderno, criando soluções que resolvem problemas reais com código limpo e performático.<br><br>
-        <strong class="text-white">Interessado em discutir oportunidades?</strong><br> 
-        Entre em contato através do: <a href="mailto:contact@florabelas.com" class="text-cyan-400 hover:text-cyan-300 underline decoration-cyan-400/30 underline-offset-4 transition">contact@florabelas.com</a>
-      </p>
-    </section>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        zinc: {
+                            850: '#1f2025',
+                            900: '#18181b',
+                            950: '#09090b',
+                        },
+                        accent: {
+                            500: '#38bdf8',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 
-    <!-- projects (PT) -->
-    <section id="projects" class="mx-auto max-w-5xl px-6 py-12 pb-24">
-      <h2 class="mb-8 text-center text-3xl font-bold text-white">Portfólio de Engenharia (Projetos Pessoais)</h2>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- card component -->
-        <article class="flex flex-col rounded-2xl bg-[#161b22] p-6 shadow-sm ring-1 ring-indigo-700/60 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:ring-cyan-400/80">
-          <h3 class="text-base font-semibold text-cyan-300">Health Data Microservice</h3>
-          <p class="text-xs font-mono text-slate-500 mt-1">Java • Spring Boot • REST API</p>
-          <p class="mt-3 text-sm text-slate-300 flex-grow">Backend desenvolvido como projeto de estudo em Spring Boot. Implementa autenticação segura, persistência otimizada com JPA/Hibernate e boas práticas de arquitetura de microsserviços.</p>
-        </article>
+    <style>
+            body {
+            background-color: #09090b;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+        }
+        .glass-panel {
+            background: rgba(24, 24, 27, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="text-zinc-300 antialiased selection:bg-accent-500/30 selection:text-white">
 
-        <article class="flex flex-col rounded-2xl bg-[#161b22] p-6 shadow-sm ring-1 ring-indigo-700/60 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:ring-cyan-400/80">
-          <h3 class="text-base font-semibold text-cyan-300">Digital Dictionary ETL & API</h3>
-          <p class="text-xs font-mono text-slate-500 mt-1">Java • SQL • Data Pipeline</p>
-          <p class="mt-3 text-sm text-slate-300 flex-grow">Pipeline de engenharia de dados desenvolvido em Java para extrair, transformar e carregar (ETL) dados linguísticos não-estruturados de PDFs para um banco relacional otimizado, servido via API REST.</p>
-        </article>
-
-        <article class="flex flex-col rounded-2xl bg-[#161b22] p-6 shadow-sm ring-1 ring-indigo-700/60 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:ring-cyan-400/80">
-          <h3 class="text-base font-semibold text-cyan-300">IoT Battery Monitor System</h3>
-          <p class="text-xs font-mono text-slate-500 mt-1">Systems Engineering • Real-time Data</p>
-          <p class="mt-3 text-sm text-slate-300 flex-grow">Arquitetura de processamento de dados em tempo real para frotas de ônibus elétricos. Monitora telemetria de baterias, armazena logs históricos e processa alertas de segurança crítica.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- English Section Divider/Start -->
-    <div class="relative">
-      <div class="absolute inset-0 flex items-center" aria-hidden="true">
-        <div class="w-full border-t border-slate-800"></div>
-      </div>
-      <div class="relative flex justify-center">
-        <span class="bg-[#0d1117] px-4 text-sm text-slate-500">English Version Below</span>
-      </div>
-    </div>
-
-    <!-- English Version -->
-    <section id="english-version" class="mx-auto max-w-4xl px-6 py-24">
-      <h2 class="mb-6 text-center text-3xl font-bold text-white">About Me</h2>
-      <p class="text-lg leading-relaxed text-slate-300">
-        Software Engineer specialized in the <strong>Java ecosystem</strong>. I currently manage the stability and lifecycle of <strong>15 critical legacy systems</strong> handling <strong class="text-cyan-400">2 million daily transactions</strong> for a major transport platform.<br><br>
-        My professional focus is on End-to-End Troubleshooting and maintaining complex J2EE/JSF architectures. In parallel, I am <strong>actively upskilling in modern stacks</strong>, dedicating my personal projects to building scalable solutions using <strong>Spring Boot</strong> and microservices.<br><br>
-        I aim to bridge the gap between legacy reliability and modern agility, applying strong engineering fundamentals to build cloud-native applications.<br><br>
-        <strong class="text-white">Open to discussing opportunities?</strong><br>
-        Reach me at: <a href="mailto:contact@florabelas.com" class="text-cyan-400 hover:text-cyan-300 underline decoration-cyan-400/30 underline-offset-4 transition">contact@florabelas.com</a>
-      </p>
-
-      <h2 class="mt-16 mb-8 text-center text-3xl font-bold text-white">Engineering Portfolio (Personal Projects)</h2>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        <article class="flex flex-col rounded-2xl bg-[#161b22] p-6 shadow-sm ring-1 ring-indigo-700/60 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:ring-cyan-400/80">
-          <h3 class="text-base font-semibold text-cyan-300">Health Data Microservice</h3>
-          <p class="text-xs font-mono text-slate-500 mt-1">Java • Spring Boot • REST API</p>
-          <p class="mt-3 text-sm text-slate-300 flex-grow">Robust backend built as a Spring Boot study project to securely manage sensitive health data. Implements JWT authentication, optimized JPA/Hibernate persistence, and microservices best practices.</p>
-        </article>
-
-        <article class="flex flex-col rounded-2xl bg-[#161b22] p-6 shadow-sm ring-1 ring-indigo-700/60 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:ring-cyan-400/80">
-          <h3 class="text-base font-semibold text-cyan-300">Digital Dictionary ETL & API</h3>
-          <p class="text-xs font-mono text-slate-500 mt-1">Java • SQL • Data Pipeline</p>
-          <p class="mt-3 text-sm text-slate-300 flex-grow">Java-based data engineering pipeline designed to Extract, Transform, and Load (ETL) unstructured linguistic data from PDFs into an optimized relational database, served via a clean REST API.</p>
-        </article>
-
-        <article class="flex flex-col rounded-2xl bg-[#161b22] p-6 shadow-sm ring-1 ring-indigo-700/60 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-xl hover:ring-cyan-400/80">
-          <h3 class="text-base font-semibold text-cyan-300">IoT Battery Monitor System</h3>
-          <p class="text-xs font-mono text-slate-500 mt-1">Systems Engineering • Real-time Data</p>
-          <p class="mt-3 text-sm text-slate-300 flex-grow">Real-time data processing architecture for electric bus fleets. Handles high-frequency telemetry ingestion, historical logging, and critical safety alert processing.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Global Footer (Moved to Bottom) -->
-    <footer class="border-t border-slate-800/80 bg-[#161b22] py-6 backdrop-blur">
-      <div class="mx-auto max-w-xl px-6 text-center text-sm text-slate-400">
-        <div class="flex flex-col items-center justify-center gap-3">
-          <a href="mailto:contact@florabelas.com" class="font-semibold text-cyan-300 hover:text-cyan-200">contact@florabelas.com</a>
-          <div class="flex gap-x-6">
-            <a href="https://www.linkedin.com/in/flora-belas" class="text-slate-400 hover:text-cyan-300 transition text-xs tracking-wider">LinkedIn</a>
-          </div>
-          <p class="text-xs text-slate-500">© 2025 Flora Belas. All rights reserved.</p>
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="font-bold text-white tracking-tight text-lg">flora_belas<span class="text-accent-500">.java</span></div>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#pt" class="text-white hover:text-accent-500 transition">PT</a>
+                <span class="text-zinc-700">|</span>
+                <a href="#en" class="text-zinc-500 hover:text-white transition">EN</a>
+            </div>
         </div>
-      </div>
+    </nav>
+
+    <main id="pt" class="pt-32 pb-20">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <header class="mb-24">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-accent-500/20 bg-accent-500/10 text-accent-500 text-xs font-mono mb-6">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-500 opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-accent-500"></span>
+                    </span>
+                    Open to Work: Java Backend & AI Engineering
+                </div>
+                
+                <h1 class="text-5xl sm:text-6xl font-bold text-white tracking-tight mb-6">
+                    Sistemas Críticos & <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 to-zinc-500">Inteligência Artificial.</span>
+                </h1>
+                
+                <p class="text-xl text-zinc-400 leading-relaxed max-w-2xl">
+                    Sou uma Engenheira de Software híbrida. Unindo a robustez do 
+                    <span class="text-white font-medium">Java Enterprise</span> com a inovação de 
+                    <span class="text-white font-medium">Modelos de IA Locais (Edge AI)</span>.
+                    Construo arquiteturas que escalam e pesquisam soluções que pensam.
+                </p>
+
+                <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm font-mono text-zinc-500">
+                    <div class="flex items-center gap-2"><div class="w-1 h-1 bg-accent-500 rounded-full"></div>Java / Spring Boot</div>
+                    <div class="flex items-center gap-2"><div class="w-1 h-1 bg-accent-500 rounded-full"></div>Python / PyTorch</div>
+                    <div class="flex items-center gap-2"><div class="w-1 h-1 bg-accent-500 rounded-full"></div>AWS / MLOps</div>
+                    <div class="flex items-center gap-2"><div class="w-1 h-1 bg-accent-500 rounded-full"></div>Oracle / SQL</div>
+                </div>
+            </header>
+
+            <section class="grid md:grid-cols-3 gap-12 mb-32 border-t border-white/10 pt-12">
+                <div class="md:col-span-1">
+                    <h2 class="text-white font-bold text-lg mb-2">O Que Eu Faço</h2>
+                    <p class="text-zinc-500 text-sm">O equilíbrio entre sustentação crítica e pesquisa aplicada.</p>
+                </div>
+                <div class="md:col-span-2 space-y-10">
+                    <div>
+                        <h3 class="text-white font-medium text-xl">Engenharia de Alta Disponibilidade</h3>
+                        <p class="mt-3 text-zinc-400 leading-relaxed">
+                            Atualmente responsável pela sustentação de <strong>15 sistemas críticos</strong> de bilhetagem que processam <span class="text-accent-500 font-mono">2 milhões de transações/dia</span>. Minha especialidade é transformar sistemas legados instáveis em operações previsíveis, reduzindo o tempo de resolução de incidentes em 82% através de documentação técnica e análise de causa-raiz.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-medium text-xl">Pesquisa em Edge AI & Privacidade</h3>
+                        <p class="mt-3 text-zinc-400 leading-relaxed">
+                            Como Principal Investigator (PI) independente, lidero estudos sobre inferência local de LLMs (Llama-3, Mistral) para saúde mental. Desenvolvo pipelines que rodam em hardware de consumo (GPUs locais) para garantir privacidade total de dados sensíveis (Biosinais + Texto).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="flex items-end justify-between mb-8">
+                    <h2 class="text-2xl font-bold text-white">Projetos Selecionados</h2>
+                    <a href="https://github.com/florabelas" class="text-sm text-accent-500 hover:text-white transition font-mono">github.com/florabelas -></a>
+                </div>
+
+                <div class="grid gap-6">
+                    
+                    <article class="glass-panel p-6 rounded-xl hover:border-accent-500/30 transition group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-semibold text-white group-hover:text-accent-500 transition">Reverse-Engineering Resilience</h3>
+                            <span class="px-2 py-1 rounded text-xs font-mono bg-zinc-800 text-zinc-400">AI Research</span>
+                        </div>
+                        <p class="text-zinc-400 mb-4">
+                            Estudo longitudinal (N=1) investigando os mecanismos terapêuticos de LLMs. Pipeline de engenharia de dados que correlaciona biosinais (HRV/EDA) com padrões linguísticos, rodando inteiramente em infraestrutura local (Edge AI) para preservação de privacidade.
+                        </p>
+                        <div class="flex gap-3 text-xs font-mono text-zinc-500">
+                            <span>Python</span>
+                            <span>Hugging Face</span>
+                            <span>Time-Series</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel p-6 rounded-xl hover:border-accent-500/30 transition group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-semibold text-white group-hover:text-accent-500 transition">Salvador Smart Battery</h3>
+                            <span class="px-2 py-1 rounded text-xs font-mono bg-zinc-800 text-zinc-400">Industrial IoT</span>
+                        </div>
+                        <p class="text-zinc-400 mb-4">
+                            Arquitetura de sistema para otimização de baterias de ônibus elétricos. Proposta técnica de R$ 12mi (Finep) focada em ingestão de telemetria em tempo real e modelos preditivos de degradação de lítio.
+                        </p>
+                        <div class="flex gap-3 text-xs font-mono text-zinc-500">
+                            <span>System Design</span>
+                            <span>IoT</span>
+                            <span>Cloud Architecture</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel p-6 rounded-xl hover:border-accent-500/30 transition group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-semibold text-white group-hover:text-accent-500 transition">Digital Dictionary ETL</h3>
+                            <span class="px-2 py-1 rounded text-xs font-mono bg-zinc-800 text-zinc-400">Java Ecosystem</span>
+                        </div>
+                        <p class="text-zinc-400 mb-4">
+                            Pipeline ETL desenvolvido em Java para estruturar dados linguísticos complexos (Línguas Afro-Brasileiras) de PDFs para bancos relacionais, servidos via API REST. Parceria com UFBA.
+                        </p>
+                        <div class="flex gap-3 text-xs font-mono text-zinc-500">
+                            <span>Java 17</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+            
+            <div class="mt-12 p-6 border border-zinc-800 rounded-lg bg-zinc-900/50 text-center">
+                <p class="text-zinc-400 mb-2">Vamos construir algo robusto?</p>
+                <a href="mailto:contact@florabelas.com" class="text-white hover:text-accent-500 font-mono text-lg transition">contact@florabelas.com</a>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="w-full h-px bg-gradient-to-r from-transparent via-zinc-700 to-transparent my-12"></div>
+
+    <main id="en" class="py-20 bg-zinc-900/30">
+        <div class="max-w-4xl mx-auto px-6">
+            
+            <div class="inline-block mb-8 px-3 py-1 border border-zinc-700 rounded text-xs text-zinc-500 font-mono">
+                English Version
+            </div>
+
+            <header class="mb-24">
+                <h1 class="text-5xl sm:text-6xl font-bold text-white tracking-tight mb-6">
+                    Critical Systems & <br>
+                    <span class="text-zinc-500">Artificial Intelligence.</span>
+                </h1>
+                
+                <p class="text-xl text-zinc-400 leading-relaxed max-w-2xl">
+                    I am a Hybrid Software Engineer. Bridging the gap between 
+                    <span class="text-white font-medium">Enterprise Java Stability</span> and 
+                    <span class="text-white font-medium">Edge AI Innovation</span>.
+                    I build systems that scale and research models that think locally.
+                </p>
+            </header>
+
+            <section class="grid md:grid-cols-3 gap-12 mb-32 border-t border-white/10 pt-12">
+                <div class="md:col-span-1">
+                    <h2 class="text-white font-bold text-lg mb-2">My Focus</h2>
+                    <p class="text-zinc-500 text-sm">Balancing production reliability with applied research.</p>
+                </div>
+                <div class="md:col-span-2 space-y-10">
+                    <div>
+                        <h3 class="text-white font-medium text-xl">High-Availability Engineering</h3>
+                        <p class="mt-3 text-zinc-400 leading-relaxed">
+                            Currently responsible for maintaining <strong>15 critical legacy systems</strong> handling <span class="text-accent-500 font-mono">2 million daily transactions</span>. My focus is on End-to-End Troubleshooting and stabilizing complex J2EE/JSF architectures, reducing incident resolution time by 82% through rigorous root-cause analysis.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-white font-medium text-xl">Edge AI & Privacy Research</h3>
+                        <p class="mt-3 text-zinc-400 leading-relaxed">
+                            As an independent Principal Investigator (PI), I lead research on privacy-preserving LLMs for mental health. I architect pipelines that correlate biosignals (HRV) with linguistic patterns using local inference (Open Weights models) to ensure data never leaves the user's device.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+             <section>
+                <div class="flex items-end justify-between mb-8">
+                    <h2 class="text-2xl font-bold text-white">Selected Projects</h2>
+                    <a href="https://github.com/florabelas" class="text-sm text-accent-500 hover:text-white transition font-mono">github.com/florabelas -></a>
+                </div>
+
+                <div class="grid gap-6">
+                    
+                    <article class="glass-panel p-6 rounded-xl hover:border-accent-500/30 transition group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-semibold text-white group-hover:text-accent-500 transition">Reverse-Engineering Resilience</h3>
+                            <span class="px-2 py-1 rounded text-xs font-mono bg-zinc-800 text-zinc-400">AI Research</span>
+                        </div>
+                        <p class="text-zinc-400 mb-4">
+                            Longitudinal (N=1) study investigating therapeutic mechanisms of LLMs. A custom data engineering pipeline correlating biosignals with linguistic patterns, running entirely on local infrastructure (Edge AI) for privacy.
+                        </p>
+                        <div class="flex gap-3 text-xs font-mono text-zinc-500">
+                            <span>Python</span>
+                            <span>Hugging Face</span>
+                            <span>Time-Series</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel p-6 rounded-xl hover:border-accent-500/30 transition group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-semibold text-white group-hover:text-accent-500 transition">Salvador Smart Battery</h3>
+                            <span class="px-2 py-1 rounded text-xs font-mono bg-zinc-800 text-zinc-400">Industrial IoT</span>
+                        </div>
+                        <p class="text-zinc-400 mb-4">
+                            System architecture for electric bus battery optimization. A $2M+ technical proposal focused on real-time telemetry ingestion and predictive lithium degradation models.
+                        </p>
+                        <div class="flex gap-3 text-xs font-mono text-zinc-500">
+                            <span>System Design</span>
+                            <span>IoT</span>
+                            <span>Cloud Architecture</span>
+                        </div>
+                    </article>
+
+                    <article class="glass-panel p-6 rounded-xl hover:border-accent-500/30 transition group">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-semibold text-white group-hover:text-accent-500 transition">Digital Dictionary ETL</h3>
+                            <span class="px-2 py-1 rounded text-xs font-mono bg-zinc-800 text-zinc-400">Java Ecosystem</span>
+                        </div>
+                        <p class="text-zinc-400 mb-4">
+                             Java-based ETL pipeline designed to structure complex linguistic data from PDFs into optimized relational databases, served via REST API. Democratizing access to Afro-Brazilian languages.
+                        </p>
+                        <div class="flex gap-3 text-xs font-mono text-zinc-500">
+                            <span>Java 17</span>
+                            <span>Spring Boot</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="border-t border-white/10 bg-zinc-950 py-8 text-center text-zinc-600 text-sm font-mono">
+        &copy; 2025 Flora Belas. All systems operational.
     </footer>
-  </body>
+
+</body>
 </html>
